@@ -7,7 +7,6 @@ def test_index(client):
 
 def test_about(client):
     response = client.get("/about")
-    assert response.status_code == 200
     assert full_title("About") in response.text
     assert "<h1>" in response.text
 

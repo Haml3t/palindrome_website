@@ -15,3 +15,4 @@ def test_palindrome_submission(client):
 
 def form_tag():
     return '<form id="palindrome_tester" action="/check" method="post">'
+    
